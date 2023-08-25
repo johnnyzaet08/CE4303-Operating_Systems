@@ -1,0 +1,209 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "milisecondsDisplay1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "milisecondsDisplay1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "milisecondsDisplay1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "milisecondsDisplay1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "milisecondsDisplay1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "milisecondsDisplay1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "milisecondsDisplay1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "milisecondsDisplay2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "milisecondsDisplay2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "milisecondsDisplay2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "milisecondsDisplay2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "milisecondsDisplay2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "milisecondsDisplay2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "milisecondsDisplay2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "secondsDisplay1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "secondsDisplay1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "secondsDisplay1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "secondsDisplay1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "secondsDisplay1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "secondsDisplay1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "secondsDisplay1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "secondsDisplay2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "secondsDisplay2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "secondsDisplay2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "secondsDisplay2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "secondsDisplay2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "secondsDisplay2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "secondsDisplay2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "minutesDisplay1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "minutesDisplay1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "minutesDisplay1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "minutesDisplay1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "minutesDisplay1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "minutesDisplay1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "minutesDisplay1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "minutesDisplay2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "minutesDisplay2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "minutesDisplay2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "minutesDisplay2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "minutesDisplay2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "minutesDisplay2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "minutesDisplay2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ledSwitch[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ledSwitch[1]",
+					"strict" : false
+				},
+				{
+					"name" : "switchSelect[0]",
+					"strict" : false
+				},
+				{
+					"name" : "switchSelect[1]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "stop",
+					"strict" : false
+				},
+				{
+					"name" : "start",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

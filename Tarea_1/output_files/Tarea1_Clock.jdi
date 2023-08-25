@@ -1,0 +1,16 @@
+<sld_project_info>
+  <project>
+    <hash md5_digest_80b="3a126430bfef0f26c082"/>
+  </project>
+  <file_info>
+    <file device="5CSEMA5F31C6" path="Tarea1_Clock.sof" usercode="0xFFFFFFFF"/>
+  </file_info>
+  <sld_infos>
+    <sld_info hpath="Design1:desi1" name="desi1">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME Design1 HAS_SOPCINFO 1 GENERATION_ID 1692715637"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+  </sld_infos>
+</sld_project_info>

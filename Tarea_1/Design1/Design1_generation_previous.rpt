@@ -1,0 +1,144 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\Zaet\Desktop\CE4303-Operating_Systems\Tarea_1\Design1.qsys --block-symbol-file --output-directory=C:\Users\Zaet\Desktop\CE4303-Operating_Systems\Tarea_1\Design1 --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading Tarea_1/Design1.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 22.1]
+Progress: Parameterizing module clk_0
+Progress: Adding nios2_gen2_0 [altera_nios2_gen2 22.1]
+Progress: Parameterizing module nios2_gen2_0
+Progress: Adding pio_miliseconds_0 [altera_avalon_pio 22.1]
+Progress: Parameterizing module pio_miliseconds_0
+Progress: Adding pio_miliseconds_1 [altera_avalon_pio 22.1]
+Progress: Parameterizing module pio_miliseconds_1
+Progress: Adding pio_minutes_0 [altera_avalon_pio 22.1]
+Progress: Parameterizing module pio_minutes_0
+Progress: Adding pio_minutes_1 [altera_avalon_pio 22.1]
+Progress: Parameterizing module pio_minutes_1
+Progress: Adding pio_seconds_0 [altera_avalon_pio 22.1]
+Progress: Parameterizing module pio_seconds_0
+Progress: Adding pio_seconds_1 [altera_avalon_pio 22.1]
+Progress: Parameterizing module pio_seconds_1
+Progress: Adding pio_selectmode_0 [altera_avalon_pio 22.1]
+Progress: Parameterizing module pio_selectmode_0
+Progress: Adding ram_0 [altera_avalon_onchip_memory2 22.1]
+Progress: Parameterizing module ram_0
+Progress: Adding rom_0 [altera_avalon_onchip_memory2 22.1]
+Progress: Parameterizing module rom_0
+Progress: Adding timer_0 [altera_avalon_timer 22.1]
+Progress: Parameterizing module timer_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: Design1.nios2_gen2_0: No Debugger.  You will not be able to download or debug programs
+Info: Design1.pio_selectmode_0: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\Zaet\Desktop\CE4303-Operating_Systems\Tarea_1\Design1.qsys --synthesis=VERILOG --output-directory=C:\Users\Zaet\Desktop\CE4303-Operating_Systems\Tarea_1\Design1\synthesis --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading Tarea_1/Design1.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 22.1]
+Progress: Parameterizing module clk_0
+Progress: Adding nios2_gen2_0 [altera_nios2_gen2 22.1]
+Progress: Parameterizing module nios2_gen2_0
+Progress: Adding pio_miliseconds_0 [altera_avalon_pio 22.1]
+Progress: Parameterizing module pio_miliseconds_0
+Progress: Adding pio_miliseconds_1 [altera_avalon_pio 22.1]
+Progress: Parameterizing module pio_miliseconds_1
+Progress: Adding pio_minutes_0 [altera_avalon_pio 22.1]
+Progress: Parameterizing module pio_minutes_0
+Progress: Adding pio_minutes_1 [altera_avalon_pio 22.1]
+Progress: Parameterizing module pio_minutes_1
+Progress: Adding pio_seconds_0 [altera_avalon_pio 22.1]
+Progress: Parameterizing module pio_seconds_0
+Progress: Adding pio_seconds_1 [altera_avalon_pio 22.1]
+Progress: Parameterizing module pio_seconds_1
+Progress: Adding pio_selectmode_0 [altera_avalon_pio 22.1]
+Progress: Parameterizing module pio_selectmode_0
+Progress: Adding ram_0 [altera_avalon_onchip_memory2 22.1]
+Progress: Parameterizing module ram_0
+Progress: Adding rom_0 [altera_avalon_onchip_memory2 22.1]
+Progress: Parameterizing module rom_0
+Progress: Adding timer_0 [altera_avalon_timer 22.1]
+Progress: Parameterizing module timer_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: Design1.nios2_gen2_0: No Debugger.  You will not be able to download or debug programs
+Info: Design1.pio_selectmode_0: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: Design1: Generating Design1 "Design1" for QUARTUS_SYNTH
+Info: Interconnect is inserted between master nios2_gen2_0.instruction_master and slave rom_0.s1 because the master has address signal 13 bit wide, but the slave is 11 bit wide.
+Info: Interconnect is inserted between master nios2_gen2_0.instruction_master and slave rom_0.s1 because the master has read signal 1 bit wide, but the slave is 0 bit wide.
+Info: Interconnect is inserted between master nios2_gen2_0.instruction_master and slave rom_0.s1 because the master has waitrequest signal 1 bit wide, but the slave is 0 bit wide.
+Info: nios2_gen2_0: "Design1" instantiated altera_nios2_gen2 "nios2_gen2_0"
+Info: pio_miliseconds_0: Starting RTL generation for module 'Design1_pio_miliseconds_0'
+Info: pio_miliseconds_0:   Generation command is [exec C:/intelfpga_lite/22.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/22.1std/quartus/bin64/perl/lib -I C:/intelfpga_lite/22.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/22.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Design1_pio_miliseconds_0 --dir=C:/Users/Zaet/AppData/Local/Temp/alt9591_6994923254068351905.dir/0052_pio_miliseconds_0_gen/ --quartus_dir=C:/intelfpga_lite/22.1std/quartus --verilog --config=C:/Users/Zaet/AppData/Local/Temp/alt9591_6994923254068351905.dir/0052_pio_miliseconds_0_gen//Design1_pio_miliseconds_0_component_configuration.pl  --do_build_sim=0  ]
+Info: pio_miliseconds_0: Done RTL generation for module 'Design1_pio_miliseconds_0'
+Info: pio_miliseconds_0: "Design1" instantiated altera_avalon_pio "pio_miliseconds_0"
+Info: pio_selectmode_0: Starting RTL generation for module 'Design1_pio_selectmode_0'
+Info: pio_selectmode_0:   Generation command is [exec C:/intelfpga_lite/22.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/22.1std/quartus/bin64/perl/lib -I C:/intelfpga_lite/22.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/22.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Design1_pio_selectmode_0 --dir=C:/Users/Zaet/AppData/Local/Temp/alt9591_6994923254068351905.dir/0053_pio_selectmode_0_gen/ --quartus_dir=C:/intelfpga_lite/22.1std/quartus --verilog --config=C:/Users/Zaet/AppData/Local/Temp/alt9591_6994923254068351905.dir/0053_pio_selectmode_0_gen//Design1_pio_selectmode_0_component_configuration.pl  --do_build_sim=0  ]
+Info: pio_selectmode_0: Done RTL generation for module 'Design1_pio_selectmode_0'
+Info: pio_selectmode_0: "Design1" instantiated altera_avalon_pio "pio_selectmode_0"
+Info: ram_0: Starting RTL generation for module 'Design1_ram_0'
+Info: ram_0:   Generation command is [exec C:/intelfpga_lite/22.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/22.1std/quartus/bin64/perl/lib -I C:/intelfpga_lite/22.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/22.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=Design1_ram_0 --dir=C:/Users/Zaet/AppData/Local/Temp/alt9591_6994923254068351905.dir/0054_ram_0_gen/ --quartus_dir=C:/intelfpga_lite/22.1std/quartus --verilog --config=C:/Users/Zaet/AppData/Local/Temp/alt9591_6994923254068351905.dir/0054_ram_0_gen//Design1_ram_0_component_configuration.pl  --do_build_sim=0  ]
+Info: ram_0: Done RTL generation for module 'Design1_ram_0'
+Info: ram_0: "Design1" instantiated altera_avalon_onchip_memory2 "ram_0"
+Info: rom_0: Starting RTL generation for module 'Design1_rom_0'
+Info: rom_0:   Generation command is [exec C:/intelfpga_lite/22.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/22.1std/quartus/bin64/perl/lib -I C:/intelfpga_lite/22.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/22.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=Design1_rom_0 --dir=C:/Users/Zaet/AppData/Local/Temp/alt9591_6994923254068351905.dir/0055_rom_0_gen/ --quartus_dir=C:/intelfpga_lite/22.1std/quartus --verilog --config=C:/Users/Zaet/AppData/Local/Temp/alt9591_6994923254068351905.dir/0055_rom_0_gen//Design1_rom_0_component_configuration.pl  --do_build_sim=0  ]
+Info: rom_0: Done RTL generation for module 'Design1_rom_0'
+Info: rom_0: "Design1" instantiated altera_avalon_onchip_memory2 "rom_0"
+Info: timer_0: Starting RTL generation for module 'Design1_timer_0'
+Info: timer_0:   Generation command is [exec C:/intelFPGA_lite/22.1std/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/22.1std/quartus/bin64//perl/lib -I C:/intelfpga_lite/22.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/22.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=Design1_timer_0 --dir=C:/Users/Zaet/AppData/Local/Temp/alt9591_6994923254068351905.dir/0056_timer_0_gen/ --quartus_dir=C:/intelfpga_lite/22.1std/quartus --verilog --config=C:/Users/Zaet/AppData/Local/Temp/alt9591_6994923254068351905.dir/0056_timer_0_gen//Design1_timer_0_component_configuration.pl  --do_build_sim=0  ]
+Info: timer_0: Done RTL generation for module 'Design1_timer_0'
+Info: timer_0: "Design1" instantiated altera_avalon_timer "timer_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "Design1" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_1: "Design1" instantiated altera_mm_interconnect "mm_interconnect_1"
+Info: irq_mapper: "Design1" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "Design1" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'Design1_nios2_gen2_0_cpu'
+Info: cpu:   Generation command is [exec C:/intelFPGA_lite/22.1std/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/22.1std/quartus/bin64//perl/lib -I C:/intelfpga_lite/22.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/22.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/22.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.pl --name=Design1_nios2_gen2_0_cpu --dir=C:/Users/Zaet/AppData/Local/Temp/alt9591_6994923254068351905.dir/0059_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/22.1std/quartus/bin64/ --verilog --config=C:/Users/Zaet/AppData/Local/Temp/alt9591_6994923254068351905.dir/0059_cpu_gen//Design1_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2023.08.21 21:55:16 (*) Starting Nios II generation
+Info: cpu: # 2023.08.21 21:55:16 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2023.08.21 21:55:16 (*)   Creating all objects for CPU
+Info: cpu: # 2023.08.21 21:55:16 (*)   Generating RTL from CPU objects
+Info: cpu: # 2023.08.21 21:55:16 (*)   Creating plain-text RTL
+Info: cpu: # 2023.08.21 21:55:16 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'Design1_nios2_gen2_0_cpu'
+Info: cpu: "nios2_gen2_0" instantiated altera_nios2_gen2_unit "cpu"
+Info: nios2_gen2_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_gen2_0_data_master_translator"
+Info: ram_0_s1_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "ram_0_s1_translator"
+Info: nios2_gen2_0_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_gen2_0_data_master_agent"
+Info: ram_0_s1_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "ram_0_s1_agent"
+Info: ram_0_s1_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "ram_0_s1_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/Zaet/Desktop/CE4303-Operating_Systems/Tarea_1/Design1/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: router: "mm_interconnect_1" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_1" instantiated altera_merlin_router "router_001"
+Info: cmd_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: Reusing file C:/Users/Zaet/Desktop/CE4303-Operating_Systems/Tarea_1/Design1/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/Zaet/Desktop/CE4303-Operating_Systems/Tarea_1/Design1/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: Design1: Done "Design1" with 30 modules, 39 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
