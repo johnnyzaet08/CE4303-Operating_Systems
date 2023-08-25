@@ -1,0 +1,25 @@
+module tarea_1_clock (
+
+	input logic clk,
+					reset,
+	input logic [1:0] switchSelect.
+	output logic [13:0] milisecondsDisplay,
+							  secondsDisplay,
+							  minutesDisplay
+
+);
+	
+	Design1 desi1 (
+	
+		.clk_clk(clk),
+		.reset_reset_n(reset),
+		.pio_miliseconds_display_external_connection_export(milisecondsDisplay),
+		.pio_seconds_display_external_connection_export(secondsDisplay),
+		.pio_minutes_display_external_connection_export(minutesDisplay),
+		.pio_selectmode_input_external_connection_export(switchSelect)
+		
+	);
+	
+
+
+end module

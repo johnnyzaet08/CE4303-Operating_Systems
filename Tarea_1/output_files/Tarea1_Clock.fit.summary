@@ -1,0 +1,20 @@
+Fitter Status : Successful - Tue Aug 22 08:51:06 2023
+Quartus Prime Version : 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+Revision Name : Tarea1_Clock
+Top-level Entity Name : tarea_1_clock
+Family : Cyclone V
+Device : 5CSEMA5F31C6
+Timing Models : Final
+Logic utilization (in ALMs) : 412 / 32,070 ( 1 % )
+Total registers : 577
+Total pins : 50 / 457 ( 11 % )
+Total virtual pins : 0
+Total block memory bits : 198,656 / 4,065,280 ( 5 % )
+Total RAM Blocks : 25 / 397 ( 6 % )
+Total DSP Blocks : 0 / 87 ( 0 % )
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0 / 6 ( 0 % )
+Total DLLs : 0 / 4 ( 0 % )
