@@ -6,8 +6,10 @@
 
 #define MAX_BUFFER_SIZE 1024
 
-// Function to save an image to a file
-void saveImageToFile(const unsigned char *imageBuffer, long imageSize, const char *filename) {
+void saveImageToFile(const unsigned char *imageBuffer, long imageSize, const char *prefix) {
+    char filename[50];
+    snprintf(filename, sizeof(filename), "%s_image_%ld.jpg", prefix, imageSize);
+
     FILE *imageFile = fopen(filename, "wb");
     if (!imageFile) {
         perror("Error opening file to save the image");
@@ -25,36 +27,30 @@ void saveImageToFile(const unsigned char *imageBuffer, long imageSize, const cha
 }
 
 int main(int argc, char *argv[]) {
-    // Check for the correct number of arguments
     if (argc != 2) {
         fprintf(stderr, "Usage: %s 5000\n", argv[0]);
         return 1;
     }
 
-    // Extract the port number from the command line argument
     int port = atoi(argv[1]);
 
-    // Create a socket for the server
     int serverSocket = socket(AF_INET, SOCK_STREAM, 0);
     if (serverSocket == -1) {
         perror("Error creating socket");
         return 1;
     }
 
-    // Set up the server address structure
     struct sockaddr_in serverAddress;
     serverAddress.sin_family = AF_INET;
     serverAddress.sin_port = htons(port);
     serverAddress.sin_addr.s_addr = INADDR_ANY;
 
-    // Bind the socket to the server address
     if (bind(serverSocket, (struct sockaddr *)&serverAddress, sizeof(serverAddress)) == -1) {
         perror("Error binding");
         close(serverSocket);
         return 1;
     }
 
-    // Listen for incoming connections
     if (listen(serverSocket, 5) == -1) {
         perror("Error listening");
         close(serverSocket);
@@ -64,7 +60,6 @@ int main(int argc, char *argv[]) {
     printf("Waiting for connections on port %d...\n", port);
 
     while (1) {
-        // Accept a new client connection
         struct sockaddr_in clientAddress;
         socklen_t clientSize = sizeof(clientAddress);
 
@@ -78,11 +73,9 @@ int main(int argc, char *argv[]) {
 
         char buffer[MAX_BUFFER_SIZE];
         while (1) {
-            // Receive the image size from the client
             long imageSize;
             ssize_t bytesReceived = recv(clientSocket, &imageSize, sizeof(imageSize), 0);
 
-            // Handle disconnection or error
             if (bytesReceived <= 0) {
                 if (bytesReceived == 0) {
                     printf("Client disconnected.\nWaiting for connections on port %d...\n", port);
@@ -92,11 +85,9 @@ int main(int argc, char *argv[]) {
                 break;
             }
 
-            // Receive the image data from the client
             unsigned char *imageBuffer = (unsigned char *)malloc(imageSize);
             bytesReceived = recv(clientSocket, imageBuffer, imageSize, 0);
 
-            // Handle disconnection or error while receiving image data
             if (bytesReceived <= 0) {
                 if (bytesReceived == 0) {
                     printf("Client disconnected.\nWaiting for connections on port %d...\n", port);
@@ -107,21 +98,17 @@ int main(int argc, char *argv[]) {
                 break;
             }
 
-            // Save the received image to a file
-            char filename[50];
-            snprintf(filename, sizeof(filename), "image_%ld.jpg", imageSize);
-            saveImageToFile(imageBuffer, imageSize, filename);
+            // Save the received image to a file with a unique name
+            saveImageToFile(imageBuffer, imageSize, "server");
 
             free(imageBuffer);
 
             printf("Image received and processed.\n");
         }
 
-        // Close the client socket
         close(clientSocket);
     }
 
-    // Close the server socket
     close(serverSocket);
 
     return 0;
