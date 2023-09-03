@@ -1,0 +1,8 @@
+####For execute docker
+
+1. Open terminal in the client carpet
+2. docker images
+####Chechk the images of the docker 
+
+3.docker run -it --rm client_centos:latest
+####Runs the docker
