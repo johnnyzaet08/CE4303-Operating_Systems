@@ -4,12 +4,13 @@
 #include <unistd.h>
 #include <arpa/inet.h>
 
-#define MAX_BUFFER_SIZE 1024
+#define MAX_BUFFER_SIZE 32000
 
 int main() {
     char ip[16]; // Store the IP address as a string (xxx.xxx.xxx.xxx)
     int port;
     char name[16];
+    char option[2];
 
     printf("Enter the IP address: ");
     fgets(ip, sizeof(ip), stdin);
@@ -18,10 +19,6 @@ int main() {
     printf("Enter the port number: ");
     scanf("%d", &port);
     getchar(); // Consume the newline character left in the input buffer
-
-    printf("Enter the name: ");
-    fgets(name, sizeof(name), stdin);
-    name[strcspn(name, "\n")] = '\0'; // Remove newline character
 
     // Create a socket for the client
     int clientSocket = socket(AF_INET, SOCK_STREAM, 0);
@@ -50,7 +47,6 @@ int main() {
     char buffer[MAX_BUFFER_SIZE];
     ssize_t bytesReceived;
 
-    // Receive a message from the server
     bytesReceived = recv(clientSocket, buffer, MAX_BUFFER_SIZE - 1, 0);
     if (bytesReceived == -1) {
         perror("Error receiving message from server");
@@ -59,9 +55,35 @@ int main() {
         printf("Server says: %s\n", buffer);
     }
 
-    // Send a message to the client upon connection
+    printf("Enter the name: ");
+    fgets(name, sizeof(name), stdin);
+    name[strcspn(name, "\n")] = '\0'; // Remove newline character
+
     const char *message = name;
     send(clientSocket, message, strlen(message), 0);
+
+    while(1){
+        bytesReceived = recv(clientSocket, buffer, MAX_BUFFER_SIZE - 1, 0);
+        if (bytesReceived == -1) {
+            perror("Error receiving message from server");
+        } else {
+            buffer[bytesReceived] = '\0';
+            printf("Server says: %s\n", buffer);
+            if(strcmp(buffer, "Successful") == 0){
+                break;  
+            } else{
+                printf("Enter select the option: ");
+                fgets(option, sizeof(option), stdin);
+                option[strcspn(option, "\n")] = '\0'; // Remove newline character
+
+                const char *message = option;
+                send(clientSocket, message, strlen(message), 0);
+            }
+        }
+
+        
+    }
+
 
     while (1) {
         printf("Enter the path of the image to send (or type 'Exit' to quit): ");
