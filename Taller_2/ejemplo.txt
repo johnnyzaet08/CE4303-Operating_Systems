@@ -1,0 +1,45 @@
+Este es un ejemplo de archivo de texto aún más grande.
+En este archivo, encontrarás una cantidad considerable de texto mezclado con palabras sin sentido y repeticiones.
+Puedes utilizar este archivo para probar el programa en C.
+El programa contará cuántas veces aparece la palabra 'ejemplo' y otras palabras más.
+Este es otro ejemplo mucho más largo y más grande.
+Este es el último ejemplo en un archivo mucho más grande y más extenso.
+El programa debería ser capaz de manejar archivos de texto mucho más grandes sin problemas.
+Esperamos que este archivo sea útil para tus pruebas.
+
+Este es un ejemplo de archivo de texto aún más grande.
+En este archivo, encontrarás una cantidad considerable de texto mezclado con palabras sin sentido y repeticiones.
+Puedes utilizar este archivo para probar el programa en C.
+El programa contará cuántas veces aparece la palabra 'ejemplo' y otras palabras más.
+Este es otro ejemplo mucho más largo y más grande.
+Este es el último ejemplo en un archivo mucho más grande y más extenso.
+El programa debería ser capaz de manejar archivos de texto mucho más grandes sin problemas.
+Esperamos que este archivo sea útil para tus pruebas.
+
+Este es un ejemplo de archivo de texto aún más grande.
+En este archivo, encontrarás una cantidad considerable de texto mezclado con palabras sin sentido y repeticiones.
+Puedes utilizar este archivo para probar el programa en C.
+El programa contará cuántas veces aparece la palabra 'ejemplo' y otras palabras más.
+Este es otro ejemplo mucho más largo y más grande.
+Este es el último ejemplo en un archivo mucho más grande y más extenso.
+El programa debería ser capaz de manejar archivos de texto mucho más grandes sin problemas.
+Esperamos que este archivo sea útil para tus pruebas.
+
+Este es un ejemplo de archivo de texto aún más grande.
+En este archivo, encontrarás una cantidad considerable de texto mezclado con palabras sin sentido y repeticiones.
+Puedes utilizar este archivo para probar el programa en C.
+El programa contará cuántas veces aparece la palabra 'ejemplo' y otras palabras más.
+Este es otro ejemplo mucho más largo y más grande.
+Este es el último ejemplo en un archivo mucho más grande y más extenso.
+El programa debería ser capaz de manejar archivos de texto mucho más grandes sin problemas.
+Esperamos que este archivo sea útil para tus pruebas.
+
+Este es un ejemplo de archivo de texto aún más grande.
+En este archivo, encontrarás una cantidad considerable de texto mezclado con palabras sin sentido y repeticiones.
+Puedes utilizar este archivo para probar el programa en C.
+El programa contará cuántas veces aparece la palabra 'ejemplo' y otras palabras más.
+Este es otro ejemplo mucho más largo y más grande.
+Este es el último ejemplo en un archivo mucho más grande y más extenso.
+El programa debería ser capaz de manejar archivos de texto mucho más grandes sin problemas.
+Esperamos que este archivo sea útil para tus pruebas.
+
