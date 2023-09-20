@@ -17,8 +17,8 @@ int main(int argc, char *argv[])
 
     printf("Starting now... \n");
 
+    int i;
     while(true){
-        int i = 0;
         scanf("%d", &i);
         ledMask |= (0x01 << i);
         fpga->LedSet(ledMask);

@@ -1,5 +1,4 @@
 #include "fpga.h"
-#include <QDebug>
 
 #include <unistd.h>
 #include <stdint.h>
