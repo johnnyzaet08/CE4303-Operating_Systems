@@ -1,20 +1,29 @@
-AS = linux-arm-gnueabihf-as
-LD = linux-arm-gnueabihf-ld
+#
+TARGET = main
+ALT_DEVICE_FAMILY ?= soc_cv_av
+SOCEDS_ROOT ?= $(SOCEDS_DEST_ROOT)
+HWLIBS_ROOT = $(SOCEDS_ROOT)/ip/altera/hps/altera_hps/hwlib
+CROSS_COMPILE = arm-linux-gnueabihf-
+CFLAGS = -g -Wall -std=c++0x -D$(ALT_DEVICE_FAMILY) -I$(HWLIBS_ROOT)/include/$(ALT_DEVICE_FAMILY) -I$(HWLIBS_ROOT)/include/
+LDFLAGS = -g -Wall
+CC = $(CROSS_COMPILE)g++
+ARCH = arm
 
-INCLUDE_PATH += /home/johnnyzaet/Desktop/includes/intel-socfpga-hwlib/armv7a/hwlib/include
+# Source files
+SOURCES = main.cpp hps.cpp ADLX345.cpp fpga.cpp
+OBJECTS = $(SOURCES:.cpp=.o)
 
-OBJ = main.o ADLX345.o fpga.o hps.o
+# Build target
+build: $(TARGET)
 
-all: main
+$(TARGET): $(OBJECTS)
+	$(CC) $(LDFLAGS) $^ -o $@
 
-main: $(OBJ)
-	$(LD) -o main $(OBJ)
+# Compile source files
+%.o : %.cpp
+	$(CC) $(CFLAGS) -c $< -o $@
 
-%.o: %.s
-	$(AS) $< -o $@
-
-%.s: %.cpp
-	$(CC) -I$(INCLUDE_PATH) -S $< -o $@
-
+# Clean target
+.PHONY: clean
 clean:
-	rm -f *.o *.s main
+	rm -f $(TARGET) *.a *.o *~
