@@ -2,6 +2,7 @@
 
 #include <unistd.h>
 #include <stdint.h>
+#include <stdio.h>
 #include <sys/ioctl.h>
 #include <linux/i2c-dev.h>
 #include <fcntl.h>
@@ -72,7 +73,7 @@ FPGA::FPGA() :
 {
     m_bInitSuccess = Init();
     if (!m_bInitSuccess)
-        qDebug() << "FPGA init failed!!!\r\n";
+        printf("Error/n");
 }
 
 FPGA::~FPGA()
