@@ -1,7 +1,7 @@
-#include <QDebug>
 #include "hps.h"
 #include "ADLX345.h"
 #include <stdint.h>
+#include <stdio.h>
 
 //#include <sys/types.h>
 #include <sys/ioctl.h>
@@ -43,7 +43,7 @@ HPS::~HPS()
 
 bool HPS::LedSet(bool bOn){
     if (m_file_mem == -1){
-        qDebug() << "Led Set Failed.\r\n";
+        printf("Led Set Failed.\r\n");
         return false;
     }
 
@@ -80,7 +80,7 @@ bool HPS::PioInit(){
         // configure LED as output pin
         alt_setbits_word((void *) ( (char *)m_virtual_base + ( ( uint32_t )( ALT_GPIO1_SWPORTA_DDR_ADDR ) & ( uint32_t )( HW_REGS_MASK ) ) ), USER_IO_DIR );
     }else{
-        qDebug() << "PioInit failed.\r\n";
+        printf("PioInit failed.\r\n");
         return false;
     }
 
